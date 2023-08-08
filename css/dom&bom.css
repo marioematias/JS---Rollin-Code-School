@@ -1,0 +1,22 @@
+.light{
+    background-color: aqua;
+    height: 300px;
+    width: 300px;
+    border: solid black 2px;
+}
+.dark{
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    border: solid black 2px;
+}
+.cuadrado{
+    background-color: red;
+    height: 150px;
+    width: 150px;
+    margin: 2px;
+}
+.nuevo-elemento{
+    display: flex;
+    flex-wrap: wrap;
+}
