@@ -6,18 +6,21 @@ class User {
     this.password = password;
   }
 }
-let users;
-if (localStorage.getItem(users)) {
-  users = JSON.parse(localStorage.getItem('users'))
-} else {
-  const users = [
-    (newUser = new User(1, "Nicole Romero", "nicole@gmail.com", "123456")),
-    (newUser = new User(2, "Matías", "matias@gmail.com", "123456")),
-  ];
+const users = [
+  (newUser = new User(1, "Nicole Romero", "nicole@gmail.com", "123456")),
+  (newUser = new User(2, "Matías", "matias@gmail.com", "123456")),
+];
 
-}
+// let users;
+// if (localStorage.getItem(users)) {
+//   users = JSON.parse(localStorage.getItem('users'))
+// } else {
+//   const users = [
+//     (newUser = new User(1, "Nicole Romero", "nicole@gmail.com", "123456")),
+//     (newUser = new User(2, "Matías", "matias@gmail.com", "123456")),
+//   ];
 
-
+// }
 function login(event) {
   event.preventDefault(); //! todos los formularios tienen evento por default que refresca la página
   const email = document.getElementById("email").value;
